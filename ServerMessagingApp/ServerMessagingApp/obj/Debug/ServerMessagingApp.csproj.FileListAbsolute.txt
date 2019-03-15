@@ -1,0 +1,7 @@
+D:\Desktop\Project\Git\MessageServer\ServerMessagingApp\ServerMessagingApp\bin\Debug\ServerMessagingApp.exe.config
+D:\Desktop\Project\Git\MessageServer\ServerMessagingApp\ServerMessagingApp\bin\Debug\ServerMessagingApp.exe
+D:\Desktop\Project\Git\MessageServer\ServerMessagingApp\ServerMessagingApp\bin\Debug\ServerMessagingApp.pdb
+D:\Desktop\Project\Git\MessageServer\ServerMessagingApp\ServerMessagingApp\obj\Debug\ServerMessagingApp.csprojAssemblyReference.cache
+D:\Desktop\Project\Git\MessageServer\ServerMessagingApp\ServerMessagingApp\obj\Debug\ServerMessagingApp.csproj.CoreCompileInputs.cache
+D:\Desktop\Project\Git\MessageServer\ServerMessagingApp\ServerMessagingApp\obj\Debug\ServerMessagingApp.exe
+D:\Desktop\Project\Git\MessageServer\ServerMessagingApp\ServerMessagingApp\obj\Debug\ServerMessagingApp.pdb
