@@ -19,6 +19,7 @@ namespace ServerMessagingApp
         private float currentNow;
 
         #region Server Command Methods
+
         public void ReverseString(byte[] data, EndPoint sender)
         {
             if (data != null && data.Length > 1)
@@ -184,7 +185,6 @@ namespace ServerMessagingApp
         }
 
         #endregion
-
 
         public GameServer(IGameTransport gameTransport, IMonotonicClock clock)
         {

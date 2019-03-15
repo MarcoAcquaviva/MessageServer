@@ -133,7 +133,6 @@ namespace ServerMessagingApp.Test
             Assert.That(sum, Is.EqualTo(2.0f));
         }
 
-
         [Test]
         public void TestClientReciveErrorPacketOnWrongType()
         {
