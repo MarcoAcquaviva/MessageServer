@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerMessagingApp", "ServerMessagingApp\ServerMessagingApp.csproj", "{2BD72D4C-1115-4457-8636-BB0E10303B01}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerMessagingApp.Test", "ServerMessagingApp.Test\ServerMessagingApp.Test.csproj", "{AFDE743A-1CE2-426A-AFB7-7BAF5F522703}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2BD72D4C-1115-4457-8636-BB0E10303B01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BD72D4C-1115-4457-8636-BB0E10303B01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BD72D4C-1115-4457-8636-BB0E10303B01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFDE743A-1CE2-426A-AFB7-7BAF5F522703}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFDE743A-1CE2-426A-AFB7-7BAF5F522703}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFDE743A-1CE2-426A-AFB7-7BAF5F522703}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFDE743A-1CE2-426A-AFB7-7BAF5F522703}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

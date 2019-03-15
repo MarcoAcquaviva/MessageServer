@@ -1,0 +1,17 @@
+D:\Desktop\Project\Git\MessageServer\ServerMessagingApp\ServerMessagingApp.Test\bin\Debug\NUnit3.TestAdapter.dll
+D:\Desktop\Project\Git\MessageServer\ServerMessagingApp\ServerMessagingApp.Test\bin\Debug\NUnit3.TestAdapter.pdb
+D:\Desktop\Project\Git\MessageServer\ServerMessagingApp\ServerMessagingApp.Test\bin\Debug\nunit.engine.dll
+D:\Desktop\Project\Git\MessageServer\ServerMessagingApp\ServerMessagingApp.Test\bin\Debug\nunit.engine.api.dll
+D:\Desktop\Project\Git\MessageServer\ServerMessagingApp\ServerMessagingApp.Test\bin\Debug\ServerMessagingApp.Test.dll
+D:\Desktop\Project\Git\MessageServer\ServerMessagingApp\ServerMessagingApp.Test\bin\Debug\ServerMessagingApp.Test.pdb
+D:\Desktop\Project\Git\MessageServer\ServerMessagingApp\ServerMessagingApp.Test\bin\Debug\nunit.framework.dll
+D:\Desktop\Project\Git\MessageServer\ServerMessagingApp\ServerMessagingApp.Test\bin\Debug\ServerMessagingApp.exe
+D:\Desktop\Project\Git\MessageServer\ServerMessagingApp\ServerMessagingApp.Test\bin\Debug\ServerMessagingApp.pdb
+D:\Desktop\Project\Git\MessageServer\ServerMessagingApp\ServerMessagingApp.Test\bin\Debug\ServerMessagingApp.exe.config
+D:\Desktop\Project\Git\MessageServer\ServerMessagingApp\ServerMessagingApp.Test\bin\Debug\nunit.framework.pdb
+D:\Desktop\Project\Git\MessageServer\ServerMessagingApp\ServerMessagingApp.Test\bin\Debug\nunit.framework.xml
+D:\Desktop\Project\Git\MessageServer\ServerMessagingApp\ServerMessagingApp.Test\obj\Debug\ServerMessagingApp.Test.csprojAssemblyReference.cache
+D:\Desktop\Project\Git\MessageServer\ServerMessagingApp\ServerMessagingApp.Test\obj\Debug\ServerMessagingApp.Test.csproj.CoreCompileInputs.cache
+D:\Desktop\Project\Git\MessageServer\ServerMessagingApp\ServerMessagingApp.Test\obj\Debug\ServerMessagingApp.Test.csproj.CopyComplete
+D:\Desktop\Project\Git\MessageServer\ServerMessagingApp\ServerMessagingApp.Test\obj\Debug\ServerMessagingApp.Test.dll
+D:\Desktop\Project\Git\MessageServer\ServerMessagingApp\ServerMessagingApp.Test\obj\Debug\ServerMessagingApp.Test.pdb
