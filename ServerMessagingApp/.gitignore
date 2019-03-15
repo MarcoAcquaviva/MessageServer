@@ -1,6 +1,8 @@
-ServerMessagingApp/Obj/Debug
-ServerMessagingApp/Obj/bin
-ServerMessagingApp/bin
-ServerMessagingApp.Test/Obj/Debug
-ServerMessagingApp.Test/Obj/bin
+ServerMessagingApp/Obj/Debug/
+ServerMessagingApp/Obj/bin/
+ServerMessagingApp/bin/Debug
+ServerMessagingApp.Test/obj
+ServerMessagingApp.Test/obj/Debug/
+ServerMessagingApp.Test/obj/bin/
+ServerMessagingApp.Test/bin
 .vs

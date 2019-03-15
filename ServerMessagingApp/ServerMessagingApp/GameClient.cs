@@ -22,7 +22,7 @@ namespace ServerMessagingApp
         {
             Console.WriteLine("\n@ Insert a message:");
             message = Console.ReadLine();
-            Packet packet = new Packet(message);
+            Packet packet = new Packet(0,message);
             sendQueue.Enqueue(packet);
         }
 

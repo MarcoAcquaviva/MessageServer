@@ -86,39 +86,6 @@ namespace ServerMessagingApp
                 {
                     writer.Write((uint)element);
                 }
-                else
-                {
-                    throw new Exception("unknown type");
-                }
-            }
-            writer.Write(packetCounter);
-        }
-
-        public Packet(params object[] elements) : this()
-        {
-            // first element is always the command
-            foreach (object element in elements)
-            {
-                if (element is int)
-                {
-                    writer.Write((int)element);
-                }
-                else if (element is float)
-                {
-                    writer.Write((float)element);
-                }
-                else if (element is byte)
-                {
-                    writer.Write((byte)element);
-                }
-                else if (element is char)
-                {
-                    writer.Write((char)element);
-                }
-                else if (element is uint)
-                {
-                    writer.Write((uint)element);
-                }
                 else if (element is string)
                 {
                     byte[] message = Encoding.UTF8.GetBytes((string)element);

@@ -9,16 +9,78 @@ namespace ServerMessagingApp
 {
     public class GameServer
     {
+        private delegate void GameCommand(byte[] data, EndPoint sender);
+        private Dictionary<byte, GameCommand> commandsTable;
+
         private Dictionary<EndPoint, GameClient> clientsTable;
+
         private IGameTransport transport;
         private IMonotonicClock clock;
         private float currentNow;
+
+        #region Server Command Methods
+        public void ReverseString(byte[] data, EndPoint sender)
+        {
+            if (data != null && data.Length >1)
+            {
+                Console.WriteLine("Recive message from {0} with {1} ", sender, data[0]);
+                string text = Encoding.UTF8.GetString(data);
+                RemoveIndexCharFromString(ref text, 0);
+                Packet packet = new Packet(0,Reverse(text));
+                SendToClient(packet, sender);
+            }
+        }
+
+        public void Add(byte[] data, EndPoint sender)
+        {
+            if (data != null && data.Length == 10)
+            {
+                byte commandID = data[0];
+                Packet packet = new Packet();
+
+                char type = Encoding.UTF8.GetChars(data,1,1)[0];
+                if (type.Equals('i'))
+                {
+                    int a = BitConverter.ToInt32(data, 2);
+                    int b = BitConverter.ToInt32(data, 6);
+                    int sum = a + b;
+                    packet = new Packet(commandID,type, sum);
+                    Console.WriteLine(sum);
+                    SendToClient(packet, sender);
+                }
+
+            }
+        }
+
+        public void Subtract(byte[] data, EndPoint sender)
+        {
+
+        }
+
+        public void Multiply(byte[] data, EndPoint sender)
+        {
+
+        }
+
+        public void Divide(byte[] data, EndPoint sender)
+        {
+
+        }
+
+        #endregion
+
 
         public GameServer(IGameTransport gameTransport, IMonotonicClock clock)
         {
             this.transport = gameTransport;
             this.clock = clock;
             clientsTable = new Dictionary<EndPoint, GameClient>();
+            commandsTable = new Dictionary<byte, GameCommand>();
+            commandsTable[0] = ReverseString;
+            commandsTable[1] = Add;
+            commandsTable[2] = Subtract;
+            commandsTable[3] = Multiply;
+            commandsTable[4] = Divide;
         }
 
         public void Run()
@@ -34,12 +96,14 @@ namespace ServerMessagingApp
         {
             EndPoint sender = transport.CreateEndPoint();
             byte[] data = transport.Recv(256, ref sender);
-            if (data != null && data.Length > 0)
+
+            if (data != null)
             {
-                Console.WriteLine("Recive message from {0} with {1} ", sender, data[0]);
-                string text = Encoding.UTF8.GetString(data);
-                Packet packet = new Packet(Reverse(text));
-                SendToClient(packet, sender);
+                byte gameCommand = data[0];
+                if (commandsTable.ContainsKey(gameCommand))
+                {
+                    commandsTable[gameCommand](data, sender);
+                }
             }
 
             foreach (GameClient client in clientsTable.Values)
@@ -48,11 +112,18 @@ namespace ServerMessagingApp
             }
         }
 
-        public static string Reverse(string s)
+        public string Reverse(string s)
         {
             char[] charArray = s.ToCharArray();
             Array.Reverse(charArray);
             return new string(charArray);
+        }
+
+        public void RemoveIndexCharFromString(ref string text, int index)
+        {
+            StringBuilder sb = new StringBuilder(text);
+            sb.Remove(index, 1);
+            text = sb.ToString();
         }
 
         public void SendToClient(Packet packet, EndPoint sender)
