@@ -45,7 +45,7 @@ namespace ServerMessagingApp
                     int a = BitConverter.ToInt32(data, 2);
                     int b = BitConverter.ToInt32(data, 6);
                     int sum = a + b;
-                    packet = new Packet(commandID, type, sum);
+                    packet = new Packet(1, type, sum);
                     SendToClient(packet, sender);
                 }
                 else if (type.Equals('f'))
@@ -53,7 +53,7 @@ namespace ServerMessagingApp
                     float a = BitConverter.ToSingle(data, 2);
                     float b = BitConverter.ToSingle(data, 6);
                     float sum = a + b;
-                    packet = new Packet(commandID, type, sum);
+                    packet = new Packet(1, type, sum);
                     SendToClient(packet, sender);
                 }
                 else
@@ -78,7 +78,7 @@ namespace ServerMessagingApp
                     int a = BitConverter.ToInt32(data, 2);
                     int b = BitConverter.ToInt32(data, 6);
                     int sub = a - b;
-                    packet = new Packet(commandID, type, sub);
+                    packet = new Packet(1, type, sub);
                     SendToClient(packet, sender);
                 }
                 else if (type.Equals('f'))
@@ -86,7 +86,7 @@ namespace ServerMessagingApp
                     float a = BitConverter.ToSingle(data, 2);
                     float b = BitConverter.ToSingle(data, 6);
                     float sub = a - b;
-                    packet = new Packet(commandID, type, sub);
+                    packet = new Packet(1, type, sub);
                     SendToClient(packet, sender);
                 }
                 else
@@ -111,7 +111,7 @@ namespace ServerMessagingApp
                     int a = BitConverter.ToInt32(data, 2);
                     int b = BitConverter.ToInt32(data, 6);
                     int mul = a * b;
-                    packet = new Packet(commandID, type, mul);
+                    packet = new Packet(1, type, mul);
                     SendToClient(packet, sender);
                 }
                 else if (type.Equals('f'))
@@ -119,7 +119,7 @@ namespace ServerMessagingApp
                     float a = BitConverter.ToSingle(data, 2);
                     float b = BitConverter.ToSingle(data, 6);
                     float mul = a * b;
-                    packet = new Packet(commandID, type, mul);
+                    packet = new Packet(1, type, mul);
                     SendToClient(packet, sender);
                 }
                 else
@@ -153,7 +153,7 @@ namespace ServerMessagingApp
                         packet = new Packet(0, "The second number cannot be 0");
                         SendToClient(packet, sender);
                     }
-                    packet = new Packet(commandID, type, division);
+                    packet = new Packet(1, type, division);
                     SendToClient(packet, sender);
                 }
                 else if (type.Equals('f'))
@@ -172,7 +172,7 @@ namespace ServerMessagingApp
                         packet = new Packet(0, "The second number cannot be 0");
                         SendToClient(packet, sender);
                     }
-                    packet = new Packet(commandID, type, division);
+                    packet = new Packet(1, type, division);
                     SendToClient(packet, sender);
                 }
                 else
