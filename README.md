@@ -20,7 +20,7 @@ P.S. You need two different project to use Client and Server on same machine
 
 * **Command* - Function
 	```
-	Packet recived
+	Packet to receive
 	```
 	
 ### Packet command server side:
