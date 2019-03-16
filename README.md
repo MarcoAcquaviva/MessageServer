@@ -4,7 +4,7 @@ Simple server/client with math funtionality and reverse string.
 
 ## Getting Started
 
-- Download the repository 
+ Download the repository 
 
 * Server side: Set your own ip address into [Program.cs](https://github.com/MarcoAcquaviva/MessageServer/blob/master/ServerMessagingApp/ServerMessagingApp/Program.cs) 
 	```
@@ -13,10 +13,9 @@ Simple server/client with math funtionality and reverse string.
 
 P.S. You need two different project to use Client and Server on same machine
 
-### Technical Information
+## Technical Information
 
-- Packet command server side:
-
+### Example : 
 
 
 * **Command* - Function
@@ -24,7 +23,7 @@ P.S. You need two different project to use Client and Server on same machine
 	Packet recived
 	```
 	
-	
+### Packet command server side:
 	
 * **0** - String reverse
 	```
@@ -47,7 +46,8 @@ P.S. You need two different project to use Client and Server on same machine
 	Packet packet = new Packet(4,'type',numA,numB);
 	```
 
-- Packet command client side:
+###  Packet command client side:
+
 * **0** - String 
 	```
 	Packet packet = new Packet(0,"Server_String");
