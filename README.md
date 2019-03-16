@@ -11,6 +11,11 @@ Simple server/client with math funtionality and reverse string.
 	transport.Bind("Your_Net_IP", Port);
 	```
 
+* Client side: Set server ip address into [Program.cs](https://github.com/MarcoAcquaviva/MessageServer/blob/master/ServerMessagingApp/ClientMessagingApp/Program.cs) 
+	```
+	GameClient client = new GameClient("server_IP", Server_Bind_Port);
+	```
+
 P.S. You need two different project to use Client and Server on same machine
 
 ## Technical Information
