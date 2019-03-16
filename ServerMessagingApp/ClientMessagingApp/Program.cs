@@ -10,6 +10,9 @@ namespace ClientMessagingApp
     {
         static void Main(string[] args)
         {
+            GameClient client = new GameClient("192.168.1.197", 9999);
+            client.Run();
+            
         }
     }
 }

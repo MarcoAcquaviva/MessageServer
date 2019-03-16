@@ -11,7 +11,7 @@ namespace ServerMessagingApp
         static void Main(string[] args)
         {
             GameTransportIPv4 transport = new GameTransportIPv4();
-            transport.Bind("192.168.3.82", 9999);
+            transport.Bind("192.168.1.197", 9999);
             GameServer server = new GameServer(transport, null);
             server.Run();
         }

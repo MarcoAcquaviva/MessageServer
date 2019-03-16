@@ -125,12 +125,12 @@ namespace ServerMessagingApp.Test
         [Test]
         public void TestClientReciveCorrectSumFloat()
         {
-            Packet packet = new Packet(1, 'f', 1.0f, 1.0f);
+            Packet packet = new Packet(1, 'f', 1.5f, 1.5f);
             transport.ClientEnqueue(packet, "test", 0);
             server.SingleStep();
             FakeData data = transport.ClientDequeue();
             float sum = BitConverter.ToSingle(data.data, 2);
-            Assert.That(sum, Is.EqualTo(2.0f));
+            Assert.That(sum, Is.EqualTo(3.0f));
         }
 
         [Test]
